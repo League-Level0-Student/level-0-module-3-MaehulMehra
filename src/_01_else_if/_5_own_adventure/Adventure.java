@@ -4,6 +4,20 @@ import javax.swing.JOptionPane;
 
 public class Adventure {
 	public static void main(String[] args) {
-		String story = JOptionPane.showInputDialog(null, "One time there was a very tall human who was 20 ft tall. He always banged his head and coudn't sit in a car. So he had a big cabin built for him but it was made out of wood. A big fire was happening in the woods so he had to evacuate. He had two choices drive away because he still owned a car or go into the house closest to him which was too strong to be burned but it was as big as the car.");
+		JOptionPane.showMessageDialog (null,"One time a man went into a restaurant. He was deciding between mac and cheese or ravioli. It was a very tough decision for him" );
+		String question1 = JOptionPane.showInputDialog(null, "Which one would you eat, mac and cheese or ravioli");
+		if (question1.equalsIgnoreCase("mac and cheese")) {
+			JOptionPane.showMessageDialog (null, "Now the man has ordered mac and cheese, but he doesn't know if he wants to sit outside or inside");
+		}
+		else if (question1.equalsIgnoreCase("ravioli")) {
+			JOptionPane.showMessageDialog(null, "Now the man has ordered ravioli, but he doesn't know whether to sit inside or outside.");
+		}
+		String question2 = JOptionPane.showInputDialog (null, "What would you rather do sit inside or outside while eating your food?");
+		if (question2.equalsIgnoreCase("outside")) {
+			JOptionPane.showMessageDialog(null, "Now the man is sitting outside enjoying the nice fresh air");
+		}
+		else if (question2.equalsIgnoreCase("inside")) {
+			JOptionPane.showMessageDialog(null, "Now the man is sitting inside in the A.C.");
+		}
 	}
 }
